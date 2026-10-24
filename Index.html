@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102344">
+  <title>TaskPro HT</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fb;
+      color: #17243b;
+    }
+    header {
+      background: #102344;
+      color: white;
+      padding: 22px 18px;
+    }
+    header h1 { margin: 0 0 6px; }
+    header p { margin: 0; color: #cbd8ee; }
+    main { padding: 18px; max-width: 650px; margin: auto; }
+    .hero, .card {
+      background: white;
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 16px;
+      box-shadow: 0 3px 12px #14294b10;
+    }
+    .hero { background: #e3edff; }
+    h2 { font-size: 21px; margin-top: 0; }
+    button {
+      width: 100%;
+      border: 0;
+      border-radius: 9px;
+      background: #245cdb;
+      color: white;
+      padding: 13px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .secondary { background: #102344; }
+    .tag { color: #245cdb; font-weight: bold; }
+    .notice { font-size: 13px; color: #657189; }
+    footer { text-align: center; padding: 20px; color: #657189; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TaskPro HT</h1>
+    <p>Travay sou entènèt. Komisyon klè.</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Jwenn travay sou entènèt</h2>
+      <p>Fè travay pwomosyonèl pou biznis epi touche komisyon lè travay ou valide.</p>
+      <button onclick="document.getElementById('travay').scrollIntoView({behavior:'smooth'})">
+        Gade travay yo
+      </button>
+      <button class="secondary" onclick="demandeBiznis()">
+        Mwen se yon biznis
+      </button>
+    </section>
+
+    <h2 id="travay">Travay disponib</h2>
+
+    <section class="card">
+      <span class="tag">Egzanp demonstrasyon</span>
+      <h3>Kreye yon ti tèks pwomosyonèl</h3>
+      <p>Prepare yon ti prezantasyon pou yon pwodwi imajinè.</p>
+      <p><strong>Komisyon egzanp: 25 GDS</strong></p>
+      <p class="notice">Travay sa a pa peye. Se yon egzanp pou teste sit la.</p>
+      <button onclick="detayTravay()">Gade enstriksyon</button>
+    </section>
+
+    <section class="card">
+      <h2>Pou biznis yo</h2>
+      <p>Voye enfòmasyon sou biznis ou ak travay ou bezwen fè yo.</p>
+      <button class="secondary" onclick="demandeBiznis()">Dekouvri sèvis la</button>
+    </section>
+
+    <section class="card">
+      <h2>Enfòmasyon sou peman</h2>
+      <p>MonCash ak NatCash poko konekte. Pa gen retrè oswa peman otomatik nan vèsyon sa a.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 TaskPro HT
+  </footer>
+
+  <script>
+    function detayTravay() {
+      alert("Sa a se yon travay demonstrasyon. Okenn komisyon reyèl poko disponib.");
+    }
+    function demandeBiznis() {
+      alert("Espas biznis la poko konekte ak yon sistèm enskripsyon. N ap ajoute fonksyon sa a nan pwochen etap la.");
+    }
+  </script>
+</body>
+</html>
